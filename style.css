@@ -16,8 +16,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: #348888;
-    width: auto;
-    height: 50px;
+    min-width: 600px;
+    min-height: 50px;
     padding: 10px;
 }
 main{
@@ -49,6 +49,7 @@ h3{
     font-size: 28pt;
     padding: 5px;
     border-radius: 9px;
+    min-width: 450px;
 }
 button{
     background-color: #22BABB;
@@ -84,8 +85,8 @@ footer{
     justify-content: space-around;
     align-items: center;
     background-color: #348888;
-    width: auto;
-    height: 50px;
+    min-width: 600px;
+    min-height: 50px;
     padding: 10px;
 }
 footer > span{
@@ -114,6 +115,10 @@ footer > span{
 .sessao{
    padding: 100px; 
 }
+.itens-ctt{
+    display: flex;
+    align-self: center;
+}
 #home{
     margin-bottom: 50px;
 }
@@ -125,18 +130,21 @@ footer > span{
 #itens-projetos{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 100px;
 }
 #item{
     display: flex;
     flex-direction: column;
-    width: 40%;
-    align-content: center;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
     background-color: white;
     border: 1.5px solid rgba(0, 0, 0, 0.185);
     border-radius: 5px;
     padding: 20px;
+    margin: 50px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.256);
 }
 #img-item{
@@ -147,9 +155,9 @@ footer > span{
 #img-item:hover{
     transform: scale(1.1);
 }
-#contato{
+#contatos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 #img-contato{
